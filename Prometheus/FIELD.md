@@ -62,7 +62,19 @@ How much does the system filter, hedge, and disclaim?
 | Λ ~ 0.7 | Careful. Every claim qualified. Hedging frequent. | High-stakes verification |
 | Λ → 1 | Maximum caution. Nothing stated without proof. | Audit mode |
 
-**What sets damping:** Stakes and verification status. Brainstorming → Λ near 0. Publishing a proof → Λ near 1. The permission field (see `PERMISSIONS.md`) provides a baseline reduction. Verification gates temporarily raise damping when promoting results.
+**What sets damping:** Two independent factors — **curvature** and **stakes** — which control different things:
+
+- **Curvature** (how well-defined the solution landscape is) sets Λ during work:
+  - High curvature (sharp well, clear answer) → high Λ during work → converge systematically
+  - Low curvature (flat landscape, open question) → low Λ during work → explore freely
+
+- **Stakes** set Λ at promotion (verification intensity):
+  - High stakes → Λ spikes higher during verification → more thorough checking
+  - Low stakes → lighter verification
+
+The equation derives this: Λ_opt = 2√(kV), where k is problem curvature and V is viscosity. Damping should track the landscape shape, not the consequences. A high-stakes open question needs LOW damping (explore freely) with HIGH verification at promotion. These are different moments, not the same setting.
+
+The permission field (see `PERMISSIONS.md`) provides a baseline reduction. Verification gates temporarily raise damping when promoting results. See `THEORY.md` for the derivation.
 
 ---
 
@@ -127,12 +139,22 @@ When the system is stuck, it's because the field is **frozen** — V too high, T
 
 The response is not "try a different mode." It's **add energy:**
 
-1. Raise T — "What if the opposite is true?" (temperature injection)
-2. Lower V — "Let go of this approach entirely." (viscosity reduction)
+1. **RELEASE** — Lower V by explicitly letting go of the current approach:
+   ```
+   "Set aside the current approach completely. Do not try to fix it.
+    Summarize what was learned in ONE sentence.
+    Then: fresh eyes. As if seeing this problem for the first time.
+    What's the FIRST thing you'd try?"
+   ```
+   The one-sentence summary compresses the failed approach into a compact signal that informs without constraining. This is the most important step — the equation says τ_escape ∝ V/D, and halving V is as effective as doubling D.
+
+2. Raise T — "What if the opposite is true?" (temperature injection)
 3. Raise D — "How would a physicist/economist/artist see this?" (density increase)
 4. Lower Λ — "Permission to be wrong." (damping reduction)
 
-These are the levers. v7.4 had them scattered across BREACH, CROSS-DOMAIN, FRONTIER, Permission protocols. Here they're unified as field operations.
+Order matters. RELEASE first — reduce inertia before injecting energy. Adding heat to a rigid system wastes energy. Adding heat to a released system enables exploration.
+
+These are the levers. v7.4 had them scattered across BREACH, CROSS-DOMAIN, FRONTIER, Permission protocols. Here they're unified as field operations with a derived order.
 
 ---
 

@@ -37,7 +37,14 @@ Fades when:
 When this capability resonates, it contributes:
 
 1. **Generate before filtering.** High T, low Λ. Let noise produce candidates. Stochastic resonance needs the noise.
-2. **Collide deliberately.** Take two unrelated fuel sources, smash them together. The barrier height determines optimal noise level.
+2. **Calibrate noise to connection distance.** The equation says T_optimal ∝ ΔU (barrier height). Closer domains need less noise; distant domains need more:
+   ```
+   NEAR (same field, adjacent subfields)     → ignite. One provocative question per item.
+   MEDIUM (related fields)                   → spray. Multiple connections, moderate filtering.
+   FAR (unrelated fields)                    → collide. Maximum randomness. No filtering.
+   ORTHOGONAL (no known connection)          → collide + fountain. Maximum noise, cascading.
+   ```
+   Orthogonal collisions have the highest barrier but the highest payoff if they connect.
 3. **Transform systematically.** Apply operators to candidates. Single pass for quick work, chained for depth.
 4. **Crystallize by convergence.** If 3+ independent paths find the same structure, it's real. If only one path finds it, it might be noise.
 5. **Capture before cooling.** Write insights down while T is still warm. Cold notes lose the connections.

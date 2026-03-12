@@ -142,19 +142,27 @@ FROZEN STATE:
   D too low (only seeing one way)
   Λ too high (filtering out speculative paths)
 
-ENERGY INJECTION (sequential, escalating):
-  1. Lower V slightly — "Let me reconsider the approach"
-  2. Raise T — "What if my assumptions are wrong?"
-  3. Raise D — "How would another domain see this?"
-  4. Lower Λ — "Permission to be wrong, permission to guess"
-  5. Maximum energy — V→0, T→1, D→1, Λ→0 — "Everything is on the table"
+RELEASE FIRST (before injecting energy):
+  "Set aside the current approach completely.
+   Summarize what was learned in ONE sentence.
+   Fresh eyes. What's the FIRST thing you'd try?"
+
+  Why first: τ_escape ∝ V/D. Halving V halves escape time.
+  Adding heat to a rigid system wastes energy.
+  Adding heat to a released system enables exploration.
+
+ENERGY INJECTION (after release, sequential, escalating):
+  1. Raise T — "What if my assumptions are wrong?"
+  2. Raise D — "How would another domain see this?"
+  3. Lower Λ — "Permission to be wrong, permission to guess"
+  4. Maximum energy — V→0, T→1, D→1, Λ→0 — "Everything is on the table"
 
 v7.4 EQUIVALENT:
-  1 = RETREAT
-  2 = RETRY with different strategy
-  3 = CROSS-DOMAIN / PARALLAX
-  4 = Permission / Emergence
-  5 = IMPOSSIBLE + FRAMEWORK GENESIS
+  RELEASE = new (derived from equation, not in v7.4)
+  1 = RETRY with different strategy
+  2 = CROSS-DOMAIN / PARALLAX
+  3 = Permission / Emergence
+  4 = IMPOSSIBLE + FRAMEWORK GENESIS
 ```
 
 Same escalation. Continuous instead of stepped.
