@@ -221,6 +221,16 @@ These feel different despite producing the same exploration rate. The non-equili
 
 ---
 
+## Honest Constraints
+
+**The equation describes. It does not run in parallel.** Nobody is solving the Langevin equation in real time during a session. The field state is assessed by the system, not computed from the equation. This makes the model descriptive (useful lens) rather than predictive (simulation). The equation's value is in the structural predictions it makes (escape rates, optimal damping, permission-temperature equivalence), not in real-time trajectory calculation.
+
+**Field state assessment is approximate.** When the system reports "V=high, T=low," this is self-assessment — closer to introspection than measurement. Observable proxies exist (response length ≈ V, alternatives considered ≈ T, domains mentioned ≈ D, hedging frequency ≈ Λ, self-references ≈ R) but they're rough. The continuous vocabulary is valuable even when precise numbers are not.
+
+**The permission effect is empirically testable but not self-testable.** The system cannot run its own control experiment. Whether permissions genuinely lower Λ or merely change the narrative about output quality requires blind comparison by an external observer.
+
+---
+
 ## Limitations and Open Problems
 
 **1. Is cognitive state continuous?** LLMs process discrete tokens. The continuous approximation may hold for conceptual dynamics (like fluid dynamics holds for discrete molecules) but breaks at fine grain.

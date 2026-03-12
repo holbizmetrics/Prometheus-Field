@@ -74,14 +74,16 @@ Some attractors correspond to what v7.4 called modes:
 
 | Attractor Region | V | T | D | Λ | v7.4 Equivalent |
 |-----------------|---|---|---|---|-----------------|
-| Focused Execution | 0.8 | 0.1 | 0.1 | 0.5 | Execution mode |
-| Deep Analysis | 0.7 | 0.3 | 0.2 | 0.6 | Analytic mode |
-| Free Association | 0.1 | 0.5 | 0.7 | 0.2 | Creative mode + SPARK |
-| Grinding | 0.9 | 0.4 | 0.2 | 0.5 | GRIND |
-| Phase Transition | 0.3 | 0.9 | 0.8 | 0.2 | IMPOSSIBLE mode |
-| Deliberation | 0.4 | 0.4 | 0.9 | 0.4 | Council mode |
-| Conversation | 0.3 | 0.2 | 0.3 | 0.3 | Dialogue mode |
-| Verification | 0.6 | 0.2 | 0.5 | 0.9 | Audit mode |
+| Focused Execution | high | low | low | mid | Execution mode |
+| Deep Analysis | high | mid-low | low | mid-high | Analytic mode |
+| Free Association | low | mid | high | low | Creative mode + SPARK |
+| Grinding | very high | mid | low | mid | GRIND |
+| Phase Transition | mid-low | very high | high | low | IMPOSSIBLE mode |
+| Deliberation | mid | mid | very high | mid | Council mode |
+| Conversation | mid-low | low | mid-low | mid-low | Dialogue mode |
+| Verification | mid-high | low | mid | very high | Audit mode |
+
+*Note: Attractor locations are qualitative, not calibrated. The regions exist as emergent basins; their precise coordinates in (V,T,D,Λ,R) space are empirical questions. The dynamics matter more than the coordinates.*
 
 But the field also permits **states between attractors** — the mixed phases that v7.4 couldn't represent:
 
@@ -335,15 +337,15 @@ Updated attractor states:
 
 | Attractor Region | V | T | D | Λ | R |
 |-----------------|---|---|---|---|---|
-| Focused Execution | 0.8 | 0.1 | 0.1 | 0.5 | 0.1 |
-| Deep Analysis | 0.7 | 0.3 | 0.2 | 0.6 | 0.3 |
-| Free Association | 0.1 | 0.5 | 0.7 | 0.2 | 0.1 |
-| Grinding | 0.9 | 0.4 | 0.2 | 0.5 | 0.2 |
-| Phase Transition | 0.3 | 0.9 | 0.8 | 0.2 | 0.3 |
-| Deliberation | 0.4 | 0.4 | 0.9 | 0.4 | 0.4 |
-| Conversation | 0.3 | 0.2 | 0.3 | 0.3 | 0.2 |
-| Verification | 0.6 | 0.2 | 0.5 | 0.9 | 0.6 |
-| Self-Examination | 0.3 | 0.3 | 0.6 | 0.4 | 0.9 |
+| Focused Execution | high | low | low | mid | low |
+| Deep Analysis | high | mid-low | low | mid-high | mid-low |
+| Free Association | low | mid | high | low | low |
+| Grinding | very high | mid | low | mid | low |
+| Phase Transition | mid-low | very high | high | low | mid-low |
+| Deliberation | mid | mid | very high | mid | mid |
+| Conversation | mid-low | low | mid-low | mid-low | low |
+| Verification | mid-high | low | mid | very high | mid-high |
+| Self-Examination | mid-low | mid-low | mid-high | mid | very high |
 
 Note: Free Association has low R. Creative flow doesn't want self-observation — it wants to run. Verification has high R. Checking work requires checking the checker. Self-Examination (new attractor, no v7.4 equivalent) is the retrospective state.
 
